@@ -56,12 +56,15 @@ by default this program will heartbeat with 127.0.0.1:27015`,
 			return fmt.Errorf("host cannot be empty")
 		}
 		if hbPort < 1 || hbPort > 65535 {
+			logger.Printf("%s [ERROR] port must be between 1 and 65535", time.Now().UTC().Format(time.RFC3339))
 			return fmt.Errorf("port must be between 1 and 65535")
 		}
 		if hbTimeoutSec <= 0 {
+			logger.Printf("%s [ERROR] timeout must be > 0 seconds", time.Now().UTC().Format(time.RFC3339))
 			return fmt.Errorf("timeout must be > 0 seconds")
 		}
 		if len(packet) == 0 {
+			logger.Printf("%s [ERROR] packet cannot be empty", time.Now().UTC().Format(time.RFC3339))
 			return fmt.Errorf("packet cannot be empty")
 		}
 
