@@ -4,7 +4,8 @@ A small Go program that can be used to send a [A2S_INFO](https://developer.valve
 
 # Usage
 
-By default this program has no output and returns 0 if you successfully receive a response from the A2S_INFO UDP packet and otherwise returns 1.
+This program will return 0 if it receives a successful response from your gameserver and otherwise return 1. Use the --verbose option to log 
+output to your console.
 
 ```bash
 ./steamcmd-healthcheck heartbeat --host <gameserver ip> --port <gameserver port> --verbose
