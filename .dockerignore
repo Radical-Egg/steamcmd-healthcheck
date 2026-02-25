@@ -1,0 +1,40 @@
+# Git
+.git
+.gitignore
+
+# Local env / secrets
+.env
+.env.*
+*.pem
+*.key
+
+# Build outputs
+bin/
+dist/
+build/
+ci/
+tmp/
+*.log
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node
+node_modules/
+npm-debug.log*
+
+# IDE/editor
+.vscode/
+.idea/
+*.swp
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+./steamcmd-healthcheck
+LICENSE
+README.md
